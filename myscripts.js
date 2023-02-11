@@ -1,4 +1,4 @@
-let person = prompt('Choose rock, paper or scissors')
+let person = prompt('Choose rock, paper or scissors').toLowerCase();
 
 let choice = ['rock','paper', 'scissors']
 
@@ -12,6 +12,7 @@ function getComputerChoice(){
 
    let computer = getComputerChoice(choice[random])
 
+ 
    if (person === computer){
     console.log('Tie!')
 
@@ -32,5 +33,11 @@ function getComputerChoice(){
 
    }else if (person === 'scissors' && computer === 'paper' ) {
     console.log('You Win')
+    
+   } else{
+    console.log('Choose only Rock, Paper or Scissors')
    }
+
+
+
 
