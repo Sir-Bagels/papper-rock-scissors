@@ -1,3 +1,4 @@
+
 let person = prompt('Choose rock, paper or scissors').toLowerCase();
 
 let choice = ['rock','paper', 'scissors']
@@ -44,7 +45,7 @@ function getComputerChoice(){
    } else{
     alert ('Choose only Rock, Paper or Scissors')
    }
-
+  
 
 
   console.log('computer ' + computerScore)
