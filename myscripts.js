@@ -1,6 +1,6 @@
 
 let computerScore = 0
-  let player = 0
+let player = 0
    
 
 function playRound() {
