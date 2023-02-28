@@ -1,15 +1,16 @@
 
-
+let computerScore = 0
+  let player = 0
    
 
 function playRound() {
 
-  let computerScore = 0
-   let player = 0
+  let person = prompt('Choose rock, paper or scissors').toLowerCase(); 
+   
 
-let choice = ['rock','paper', 'scissors']
+  let choice = ['rock','paper', 'scissors']
 
-let random = Math.floor(Math.random() * choice.length);
+  let random = Math.floor(Math.random() * choice.length);
 
 function getComputerChoice(){
     
@@ -18,9 +19,9 @@ function getComputerChoice(){
    console.log (getComputerChoice())
 
    let computer = getComputerChoice(choice[random])
-   let computerScore = 0
+   
+  
 
- function winner() {
    if (person === computer){
         return ('Tie!')
 
@@ -56,6 +57,7 @@ function getComputerChoice(){
    }
   }
 
+
 // function game(){
 //   for (let i = 0; i < 5; i++){
 //     playRound(i)
@@ -65,9 +67,9 @@ function getComputerChoice(){
 // }
 
 // console.log(computer)
-// console.log(playRound())
-// console.log(computerScore)
-// console.log(player)
+console.log(playRound())
+console.log(computerScore)
+console.log(player)
 
 
 
