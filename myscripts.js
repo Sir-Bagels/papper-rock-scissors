@@ -17,13 +17,10 @@ function getComputerChoice(){
 }
    console.log (getComputerChoice())
 
-   
+   let computer = getComputerChoice(choice[random])
+   let computerScore = 0
 
-   let computer = getComputerChoice()
-
-  
-  let person = prompt('Choose rock, paper or scissors').toLowerCase();
-
+ function winner() {
    if (person === computer){
         return ('Tie!')
 
@@ -55,7 +52,7 @@ function getComputerChoice(){
     return ('You Win')
     
    } else{
-    return ('Choose only Rock, Paper or Scissors')
+    alert ('Choose only Rock, Paper or Scissors')
    }
   }
 
@@ -68,7 +65,7 @@ function getComputerChoice(){
 // }
 
 // console.log(computer)
-console.log(playRound())
+// console.log(playRound())
 // console.log(computerScore)
 // console.log(player)
 
