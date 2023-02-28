@@ -1,4 +1,11 @@
-let person = prompt('Choose rock, paper or scissors').toLowerCase();
+
+
+   
+
+function playRound() {
+
+  let computerScore = 0
+   let player = 0
 
 let choice = ['rock','paper', 'scissors']
 
@@ -10,56 +17,88 @@ function getComputerChoice(){
 }
    console.log (getComputerChoice())
 
-   let computer = getComputerChoice(choice[random])
-   let computerScore = 0
+   
 
- function winner() {
+   let computer = getComputerChoice()
+
+  
+  let person = prompt('Choose rock, paper or scissors').toLowerCase();
+
    if (person === computer){
-    return ('Tie!')
+        return ('Tie!')
 
    }else if (person === 'rock' && computer === 'paper' ) {
-    // return ('You lose')
     computerScore++
+    return ('You lose')
+    
 
    }else if (person === 'rock' && computer === 'scissors' ) {
+    player++
     return ('You Win')
 
    }else if (person === 'paper' && computer === 'rock' ) {
+    player++
     return ('You Win')
 
    }else if (person === 'paper' && computer === 'scissors' ) {
-    // return ('You lose')
+    computerScore++
+    return ('You lose')
     computerScore++
    
    }else if (person === 'scissors' && computer === 'rock' ) {
-    // return ('You lose');
+    computerScore++
+    return ('You lose');
     computerScore++;
 
    }else if (person === 'scissors' && computer === 'paper' ) {
+    player++
     return ('You Win')
     
    } else{
     return ('Choose only Rock, Paper or Scissors')
    }
- }
-console.log(winner())
+  }
 
-  let final = winner()
-  let playScore = 0
-  // let computerScore = 0
+// function game(){
+//   for (let i = 0; i < 5; i++){
+//     playRound(i)
+//   return console.log( computerScore + player)
+    
+// }
+// }
 
-function game() {
+// console.log(computer)
+console.log(playRound())
+// console.log(computerScore)
+// console.log(player)
 
-    for(i = 0; computerScore > 5; i++){
+
+
+
+
+
+
+
+
+
+// console.log(winner())
+
+//   let final = winner()
+//   let playScore = 0
+//   // let computerScore = 0
+
+// function game() {
+
+//     for(i = 0; computerScore > 5; i++){
   
-  if (final === 'You lose'){
-     return computerScore += 1;
-  }
-  else {
-     return playScore += 1;
-  }
-}
+//   if (final === 'You lose'){
+//      return computerScore += 1;
+//   }
+//   else {
+//      return playScore += 1;
+//   }
+// }
 
-  }
+//   }
 
-  console.log(computerScore)
+//   console.log(computerScore)
